@@ -13,17 +13,17 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Update file
         run: |
-          echo "Update: $(date)" >> log.txt
+          echo "Update: $(date)" >> activity.txt
 
-      - name: Commit & Push
+      - name: Commit and push
         run: |
           git config --global user.name "frrdnnd"
           git config --global user.email "ferneedevweb@gmail.com"
-          git add .
+          git add activity.txt
           git commit -m "auto update" || echo "no change"
           git push
