@@ -13,8 +13,8 @@ jobs:
 
       - name: Setup Git
         run: |
-          git config --global user.name 'auto-commit'
-          git config --global user.email 'auto-commit@example.com'
+          git config --global user.name 'frrdnnd'
+          git config --global user.email 'ferneedevweb@gmail.com'
 
       - name: Make changes
         run: |
