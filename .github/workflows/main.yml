@@ -26,7 +26,7 @@ jobs:
       - name: Make multiple commits
         run: |
           # Ubah angka di bawah ini untuk atur jumlah commit per hari
-          COMMIT_COUNT=6
+          COMMIT_COUNT=25
 
           for i in $(seq 1 $COMMIT_COUNT); do
             echo "Auto commit #$i on $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> auto-commit.txt
